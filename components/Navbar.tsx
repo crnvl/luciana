@@ -13,7 +13,7 @@ export default function Navbar() {
     }
 
     return <>
-        <nav className="text-md font-bold">
+        <nav className="fixed text-md font-bold bg-black w-full">
             <div className="max-w-7xl mx-auto px-4 py-4 md:py-2">
                 <div className="flex justify-between">
                     <div className="flex items-center space-x-4">
@@ -44,10 +44,12 @@ export default function Navbar() {
 
             {/* mobile view */}
             <div className={hamClass}>
-                <a href="" className="block py-2 px-4">Sandbox</a>
-                <a href="#" className="block py-2 px-4">Projects</a>
-                <a href="#" className="block py-2 px-4">Blog</a>
-                <a href="#" className="block py-2 px-4">About</a>
+                <div className="border-solid border-0 border-b border-white">
+                    <a href="" className="block py-2 px-4">Sandbox</a>
+                    <a href="#" className="block py-2 px-4">Projects</a>
+                    <a href="#" className="block py-2 px-4">Blog</a>
+                    <a href="#" className="block py-2 px-4">About</a>
+                </div>
             </div>
         </nav>
     </>
