@@ -13,7 +13,7 @@ export default function Navbar() {
     }
 
     return <>
-        <nav className="fixed text-md font-bold bg-black w-full">
+        <nav className="fixed text-md font-bold w-full">
             <div className="max-w-7xl mx-auto px-4 py-4 md:py-2">
                 <div className="flex justify-between">
                     <div className="flex items-center space-x-4">
